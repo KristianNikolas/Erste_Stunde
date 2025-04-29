@@ -2,36 +2,37 @@ using UnityEngine;
 
 public class Wizard : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    // Speed at which the wizard moves
+    public float moveSpeed = 3f;
 
     // Update is called once per frame
     void Update()
     {
-        //float f = Input.GetAxis("Horizontal");
+        // Initialize movement as a zero vector
+        Vector3 movement = Vector3.zero;
+
+        // Check for movement input on each axis
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position = transform.position + new Vector3(0, 3, 0) * Time.deltaTime;
+            movement += Vector3.up;  // Move up
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.down * Time.deltaTime * 3;
+            movement += Vector3.down;  // Move down
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * Time.deltaTime * 3;
+            movement += Vector3.right;  // Move right
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * Time.deltaTime * 3;
+            movement += Vector3.left;  // Move left
         }
+
+        // Apply the movement to the transform position with time-based scaling
+        transform.position += movement * moveSpeed * Time.deltaTime;
     }
-
-
 }
