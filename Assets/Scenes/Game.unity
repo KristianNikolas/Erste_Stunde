@@ -119,6 +119,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71981998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4518907416890427803, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
+  m_PrefabInstance: {fileID: 5646458837716984659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &71981999
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71981998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9b90cfd4b59ec74c8a92746caf85bec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +295,7 @@ GameObject:
   - component: {fileID: 527418105}
   - component: {fileID: 527418104}
   - component: {fileID: 527418107}
+  - component: {fileID: 527418108}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Player
@@ -352,11 +380,11 @@ Transform:
   m_GameObject: {fileID: 527418103}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.84, y: 0.4, z: -0.0012249686}
+  m_LocalPosition: {x: 3.287, y: -0.43599996, z: 0.043719668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1266007933}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &527418107
 PolygonCollider2D:
@@ -584,38 +612,28 @@ PolygonCollider2D:
       - {x: 0.72333336, y: 1.0066667}
       - {x: 0.7166667, y: 1.02}
   m_UseDelaunayMesh: 0
---- !u!1 &1266007932
-GameObject:
+--- !u!95 &527418108
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266007933}
-  m_Layer: 0
-  m_Name: Wizard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1266007933
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266007932}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6461009, y: -0.5998739, z: 0.044944637}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 527418106}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 527418103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e995e00560700de4ea8c816da4ab88d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &13846835955073166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -687,11 +705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5787953465235601056, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.39
+      value: 8.35
       objectReference: {fileID: 0}
     - target: {fileID: 5787953465235601056, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.78
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 5787953465235601056, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -728,7 +746,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4518907416890427803, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71981999}
   m_SourcePrefab: {fileID: 100100000, guid: e0d26988cb1c8e74f9bb8fbdf207ca7e, type: 3}
 --- !u!1001 &8002815713801869138
 PrefabInstance:
@@ -792,7 +813,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1266007933}
-  - {fileID: 5646458837716984659}
   - {fileID: 13846835955073166}
   - {fileID: 8002815713801869138}
+  - {fileID: 5646458837716984659}
+  - {fileID: 527418106}
