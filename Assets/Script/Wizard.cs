@@ -62,7 +62,7 @@ public class Wizard : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Vector3 position = transform.position + new Vector3(0.9f, 0.8f, 0);
+            Vector3 position = transform.position + new Vector3(-0.5f, 0.4f, 0);
             GameObject obj = Instantiate(fireballPrefab, position, Quaternion.identity);
         }
     }
